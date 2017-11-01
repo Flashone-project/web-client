@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
+import mobile_one from '../assets/mobile/1.png'
 
 class HomeArea extends Component {
   state = {}
@@ -31,7 +31,7 @@ class HomeArea extends Component {
                   </div>
                   <div className="col-md-4 col-sm-4">
                     <div className="slider-imgj">
-                      <img src="img/mobile/1.png" alt />
+                      <img src={mobile_one} alt />
                     </div>
                   </div>
                 </div>

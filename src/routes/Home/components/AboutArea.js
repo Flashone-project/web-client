@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
+import mobile_two from '../assets/mobile/2.png'
 
 
 export class AboutArea extends Component {
@@ -45,7 +45,7 @@ export class AboutArea extends Component {
                </div>
                <div className="col-md-5 col-sm-6">
                   <div className="about-bottom-img">
-                     <img src="img/mobile/2.png" alt=""/>
+                     <img src={mobile_two} alt=""/>
                   </div>
                </div>
             </div>

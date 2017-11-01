@@ -1,6 +1,7 @@
 /* @flow */
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import m_one from '../assets/mobile/m-1.png'
 
 export class FeatureArea extends Component {
   state = {}
@@ -54,7 +55,7 @@ export class FeatureArea extends Component {
                </div>
                <div className="col-lg-4 col-md-4">
                   <div className="feature-img text-center">
-                     <img src="img/mobile/m-1.png" alt="" />
+                     <img src={m_one} alt="" />
                   </div>
                </div>
                <div className="col-lg-4 col-md-4 featured-right pt-50 pl-0">
