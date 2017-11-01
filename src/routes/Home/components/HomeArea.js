@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-var NewComponent = React.createClass({
-  render: function() {
+
+class HomeArea extends Component {
+  state = {}
+  render() {
     return (
-
       <div id="home-area" className="height-100vh bg-oapcity-40 bg-overly bg-img-1 sm-height-none">
         <div className="table">
           <div className="table-cell">
@@ -38,8 +40,12 @@ var NewComponent = React.createClass({
           </div>
         </div>
       </div>
-    );
+    )
   }
-});
+}
 
-export default NewComponent
+HomeArea.propTypes = {
+  // name: PropTypes.string
+}
+
+export default (HomeArea)

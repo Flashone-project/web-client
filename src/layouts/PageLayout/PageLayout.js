@@ -1,14 +1,12 @@
 import React from 'react'
 import { IndexLink, Link } from 'react-router'
 import PropTypes from 'prop-types'
-import HomeArea from './HomeArea'
-import AboutArea from './AboutArea'
 
 export const PageLayout = ({ children }) => (
   <div className="wrapper">
-    <header className="header-area">
-       <div id="main-menu" className="sticker">
-         <div className="container">
+      <header className="header-area">
+        <div id="main-menu" className="sticker">
+          <div className="container">
            <div className="row">
              <div className="col-md-12 col-xs-12">
                <div className="logo float-left navbar-header">
@@ -33,11 +31,10 @@ export const PageLayout = ({ children }) => (
                </div>
              </div>
            </div>
-         </div>
-       </div>
-     </header>
-     {HomeArea}
-     {AboutArea}
+          </div>
+        </div>
+      </header>
+      {children}
   </div>
 )
 PageLayout.propTypes = {
