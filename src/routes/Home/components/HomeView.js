@@ -7,6 +7,8 @@ import FeatureArea from './FeatureArea'
 import ScreenshortArea from './ScreenshortArea'
 import QuestionArea from './QuestionArea'
 import NewsletterArea from './NewsletterArea'
+import RoadmapArea from './RoadmapArea'
+import DownloadArea from './DownloadArea'
 import './HomeView.scss'
 
 export class HomeView extends Component {
@@ -20,39 +22,106 @@ export class HomeView extends Component {
         <AboutArea/>
         <FeatureArea/>
 
-
-        <div className="download-area bg-oapcity-40 ptb-120 bg-img-3">
-           <div className="container">
-              <div className="row">
-                 <div className="col-md-12 text-center">
-                    <div className="title-style title-pb2">
-                       <h1><span>Download The app On</span> </h1>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis.</p>
-                    </div>
-                    <div className="download-links">
-                       <a href="#">
-                          <i className="zmdi zmdi-apple"></i>
-                          <div className="text fix">
-                             <h4>App Store</h4>
-                          </div>
-                       </a>
-                       <a className="res-xs" href="#">
-                          <i className="zmdi zmdi-windows"></i>
-                          <div className="text fix">
-                             <h4>Windows store</h4>
-                          </div>
-                       </a>
-                       <a href="#">
-                          <i className="zmdi zmdi-google-play"></i>
-                          <div className="text fix">
-                             <h4>Play Store</h4>
-                          </div>
-                       </a>
-                    </div>
+        <div className="choose-area pb-70">
+            <div className="container">
+                <div className="row">
+                   <div className="col-md-12 text-center">
+                        <div className="title-style title-pb">
+                            <h1>Token <span>Specification</span> </h1>
+                            <p>Token Address: <a href="https://www.w3schools.com/" target="_blank">0x610c94B8f228b442e411Aebb2191b9fD8d7A3EF0</a></p>
+                        </div>
+                   </div>
+                </div>
+                <div className="container">
+                   <div className="row text-center">
+                       <div className="col-sm-6 col-md-3">
+                           <div className="single-features-list mb-52">
+                                 <div className="feature-list-icon mx-auto">
+                                     <i className="zmdi zmdi-collection-text mx-auto"></i>
+                                 </div>
+                               <h3 className="ht-pt"><b><span className="timer">50</span> Million</b></h3>
+                               <p>max supply</p>
+                           </div>
+                       </div>
+                       <div className="col-sm-6 col-md-3">
+                           <div className="single-features-list mb-52">
+                                 <div className="feature-list-icon mx-auto">
+                                     <i className="zmdi zmdi-collection-text mx-auto"></i>
+                                 </div>
+                               <h3 className="ht-pt"><b><span className="timer">10</span> Million</b></h3>
+                               <p>initial supply</p>
+                           </div>
+                       </div>
+                       <div className="col-sm-6 col-md-3">
+                           <div className="single-features-list mb-52">
+                                 <div className="feature-list-icon mx-auto">
+                                     <i className="zmdi zmdi-collection-text mx-auto"></i>
+                                 </div>
+                               <h3 className="ht-pt"><b><span className="timer">15</span> Days</b></h3>
+                               <p>min coin age</p>
+                           </div>
+                       </div>
+                       <div className="col-sm-6 col-md-3">
+                           <div className="single-features-list mb-52">
+                                 <div className="feature-list-icon mx-auto">
+                                     <i className="zmdi zmdi-collection-text mx-auto"></i>
+                                 </div>
+                               <h3 className="ht-pt"><b><span className="timer">100</span>% Interest</b></h3>
+                               <p>for the first year</p>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div className="container">
+                 <div className="row">
+                   <div className="col-lg-4 col-md-6 col-xs-12">
+                     <table className="table table-striped">
+                       <tbody>
+                         <tr>
+                           <td>Name</td>
+                           <td><b>FlashOne</b></td>
+                         </tr>
+                         <tr>
+                           <td>Symbol</td>
+                           <td><b>FLASH</b></td>
+                         </tr>
+                         <tr>
+                           <td>Decimals</td>
+                           <td><b>18</b></td>
+                         </tr>
+                         <tr>
+                           <td>Max Total Supply</td>
+                           <td><b>50,000,000</b></td>
+                         </tr>
+                         <tr>
+                           <td>Initial Supply</td>
+                           <td><b>10,000,000</b></td>
+                         </tr>
+                         <tr>
+                           <td>Min Coin Age</td>
+                           <td><b>15 Days</b></td>
+                         </tr>
+                         <tr>
+                           <td>Max Coin Age</td>
+                           <td><b>90 Days</b></td>
+                         </tr>
+                       </tbody>
+                     </table>
+                   </div>
+                   <div className="col-lg-4 col-md-6 col-xs-12">
+                     1 of 2
+                   </div>
+                   <div className="col-lg-4 col-md-6 col-xs-12">
+                     2 of 2
+                   </div>
                  </div>
-              </div>
-           </div>
+                </div>
+            </div>
         </div>
+
+        <DownloadArea/>
+        <RoadmapArea/>
+
 
         <QuestionArea/>
         <ScreenshortArea/>
