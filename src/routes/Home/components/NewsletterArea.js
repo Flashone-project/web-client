@@ -21,7 +21,7 @@ export class NewsletterArea extends Component {
             <div className="row">
                <div className="subscribe-form text-center col-xs-12 col-md-offset-4 col-md-4 col-sm-8 col-sm-offset-2">
                   <form id="mc-form" className="mc-form">
-                     <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your Email address"/>
+                     <input id="mc-email" type="email" autoComplete="off" placeholder="Enter your Email address"/>
                      <button  id="mc-submit" type="submit"><i className="zmdi zmdi-mail-send"></i></button>
                   </form>
 

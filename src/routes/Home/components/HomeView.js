@@ -10,17 +10,58 @@ import NewsletterArea from './NewsletterArea'
 import RoadmapArea from './RoadmapArea'
 import DownloadArea from './DownloadArea'
 import './HomeView.scss'
+import Scroll from 'react-scroll';
+
+var Element    = Scroll.Element;
+var scroll     = Scroll.animateScroll;
 
 export class HomeView extends Component {
-  state = {}
+  constructor (props){
+      super(props);
+      this.state = {
+        showToTop: false
+      }
+      this.scrollToTop = this.scrollToTop.bind(this);
+  }
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+
+  listenScrollEvent(e) {
+    if (window.scrollY > 200) {
+      if (!this.state.showToTop) {
+        this.setState({ showToTop: true })
+      }
+    } else {
+      if (this.state.showToTop) {
+        this.setState({ showToTop: false })
+      }
+    }
+  }
+
+componentDidMount() {
+     window.addEventListener("scroll", this.listenScrollEvent.bind(this));
+}
+
+componentWillUnmount() {
+    window.removeEventListener("scroll", this.listenScrollEvent.bind(this));
+}
+
   render() {
-    console.log(HomeArea);
+    let styleToTop = { display: (this.state.showToTop) ? 'block' : 'none'}
     return (
-      <div>
-        <HomeArea/>
+      <div ref={'mainWindow'} onScroll={this.listenScrollEvent.bind(this)}>
+        <Element name="home-area" >
+          <HomeArea/>
+        </Element>
         <ServiceArea/>
-        <AboutArea/>
-        <FeatureArea/>
+        <Element name="service-area">
+          <AboutArea/>
+        </Element>
+        <Element name="features-area">
+          <FeatureArea/>
+        </Element>
+
 
         <div className="choose-area pb-70">
             <div className="container">
@@ -120,10 +161,14 @@ export class HomeView extends Component {
         </div>
 
         <DownloadArea/>
-        <RoadmapArea/>
+        <Element name="roadmap-area">
+          <RoadmapArea/>
+        </Element>
+
 
 
         <QuestionArea/>
+
         <ScreenshortArea/>
 
 
@@ -479,8 +524,8 @@ export class HomeView extends Component {
               </div>
            </div>
         </footer>
-        <div id="toTop">
-           <i className="fa fa-chevron-up"></i>
+        <div id="toTop" style={styleToTop} onClick={this.scrollToTop}>
+           <i className="zmdi zmdi-chevron-up"></i>
         </div>
       </div>
     )
