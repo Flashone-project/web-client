@@ -1,7 +1,6 @@
 /* @flow */
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Accordion from 'react-responsive-accordion';
 import classnames from 'classnames'
 
 export class QuestionArea extends Component {
@@ -87,11 +86,7 @@ export class QuestionArea extends Component {
                                                       </div>
                                                   </div>
                                               </div>
-                                              <div className="col-lg-7 col-md-7 col-xs-12">
-                                                  <div className="choose-img">
-                                                      jdjdj
-                                                  </div>
-                                              </div>
+                                              
                                           </div>
 
                                           <p>

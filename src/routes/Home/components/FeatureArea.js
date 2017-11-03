@@ -25,7 +25,7 @@ export class FeatureArea extends Component {
                 <div className="col-lg-4 col-md-4 featured-left pr-0 xs-res">
                   <div className="single-features-list text-right">
                     <div className="feature-list-icon">
-                      <i className="zmdi zmdi-favorite"></i>
+                      <i className="zmdi zmdi-money-box"></i>
                     </div>
                     <div className="feature-list-text">
                       <h3>Crypto-currency</h3>
@@ -36,7 +36,7 @@ export class FeatureArea extends Component {
                   </div>
                   <div className="single-features-list text-right">
                     <div className="feature-list-icon">
-                      <i className="zmdi zmdi-language-html5"></i>
+                      <i className="zmdi zmdi-refresh"></i>
                     </div>
                     <div className="feature-list-text">
                       <h3>Trading</h3>
@@ -47,7 +47,7 @@ export class FeatureArea extends Component {
                   </div>
                   <div className="single-features-list text-right">
                     <div className="feature-list-icon">
-                      <i className="zmdi zmdi-desktop-mac"></i>
+                      <i className="zmdi zmdi-balance-wallet"></i>
                     </div>
                     <div className="feature-list-text">
                       <h3>Staking</h3>
@@ -65,7 +65,7 @@ export class FeatureArea extends Component {
                 <div className="col-lg-4 col-md-4 featured-right pl-0">
                   <div className="single-features-list text-left">
                     <div className="feature-list-icon">
-                      <i className="zmdi zmdi-favorite"></i>
+                      <i className="zmdi zmdi-accounts-alt"></i>
                     </div>
                     <div className="feature-list-text">
                       <h3>Lending</h3>
@@ -76,7 +76,7 @@ export class FeatureArea extends Component {
                   </div>
                   <div className="single-features-list text-left">
                     <div className="feature-list-icon">
-                      <i className="zmdi zmdi-language-html5"></i>
+                      <i className="zmdi zmdi-money"></i>
                     </div>
                     <div className="feature-list-text">
                       <h3>Dividends</h3>
@@ -87,7 +87,7 @@ export class FeatureArea extends Component {
                   </div>
                   <div className="single-features-list text-left res-features">
                     <div className="feature-list-icon">
-                      <i className="zmdi zmdi-desktop-mac"></i>
+                      <i className="zmdi zmdi-balance"></i>
                     </div>
                     <div className="feature-list-text">
                       <h3>Internal Currency</h3>

@@ -15,13 +15,13 @@ export class DownloadArea extends Component {
                       </div>
                       <div className="download-links">
                           <a className="res-xs" href="#">
-                              <i className="zmdi zmdi-windows"></i>
+                              <i className="zmdi zmdi-file-text"></i>
                               <div className="text fix">
                                   <h4>FlashOne WhitePaper</h4>
                               </div>
                           </a>
                           <a href="#">
-                              <i className="zmdi zmdi-google-play"></i>
+                              <i className="zmdi zmdi-file"></i>
                               <div className="text fix">
                                   <h4>Terms and Conditions</h4>
                               </div>

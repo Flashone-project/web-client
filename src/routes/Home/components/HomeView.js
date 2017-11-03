@@ -9,6 +9,7 @@ import QuestionArea from './QuestionArea'
 import NewsletterArea from './NewsletterArea'
 import RoadmapArea from './RoadmapArea'
 import DownloadArea from './DownloadArea'
+import Footer from './Footer'
 import './HomeView.scss'
 import Scroll from 'react-scroll';
 
@@ -398,7 +399,8 @@ componentWillUnmount() {
 
 
         <NewsletterArea/>
-        <div className="icon-slider-area ptb-110">
+
+        {/*<div className="icon-slider-area ptb-110">
            <div className="container">
               <div className="row">
                  <div className="item_all indicator-style3">
@@ -429,14 +431,13 @@ componentWillUnmount() {
                  </div>
               </div>
            </div>
-        </div>
+        </div>*/}
         <div id="support-area" className="contact-area gray-bg pt-120">
            <div className="container">
               <div className="row">
                  <div className="col-md-12 text-center">
                     <div className="title-style title-pb">
                        <h1>get in<span> touch</span></h1>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam </p>
                     </div>
                  </div>
                  <div className="col-md-offset-2 col-md-8 text-center">
@@ -499,35 +500,7 @@ componentWillUnmount() {
               </div>
            </div>
         </div>
-        <footer className="footer-area pt-120 pb-80">
-           <div className="container">
-              <div className="col-md-12 text-center">
-                 <div className="footer-all">
-                    <div className="footer-logo logo">
-                       <a href="#">
-                          <h2>AppMom</h2>
-                       </a>
-                    </div>
-                    <div className="footer-icon">
-                       <ul>
-                          <li><a href="#"><i className="zmdi zmdi-facebook"></i></a></li>
-                          <li><a href="#"><i className="zmdi zmdi-twitter"></i></a></li>
-                          <li><a href="#"><i className="zmdi zmdi-google-plus"></i></a></li>
-                          <li><a href="#"><i className="zmdi zmdi-pinterest"></i></a></li>
-                          <li><a href="#"><i className="zmdi zmdi-linkedin"></i></a></li>
-                       </ul>
-                    </div>
-                    <div className="footer-text">
-                       <span>
-                       Copyright © 2017
-                       <a href="http://bootexperts.com/" target="_blank">HasTech</a>
-                       all rights reserved.
-                       </span>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </footer>
+        <Footer/>
         <div id="toTop" style={styleToTop} onClick={this.scrollToTop}>
            <i className="zmdi zmdi-chevron-up"></i>
         </div>
