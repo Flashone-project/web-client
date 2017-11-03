@@ -169,81 +169,85 @@ componentWillUnmount() {
 
         <QuestionArea/>
 
-        <ScreenshortArea/>
+        <Element name="screenshort-area">
+          <ScreenshortArea/>
+        </Element>
 
 
 
 
-        <div id="review-area" className="ptb-120">
-           <div className="container">
-              <div className="row">
-                 <div className="col-md-12 text-center">
-                    <div className="title-style title-pb4">
-                       <h1>our <span> client loves</span></h1>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam </p>
-                    </div>
-                 </div>
-                 <div className="col-md-8 col-md-offset-2">
-                    <div className="slider-2">
-                       <div className="single-team text-center">
-                          <div className="team-image">
-                             <img src="img/testimonial/1.png" alt=""/>
-                          </div>
-                          <div className="team-details">
-                             <h3>Salim Rana</h3>
-                             <div className="team-social fix">
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look. </p>
-                             </div>
-                             <div className="reating-icon">
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star-half"></i>
-                             </div>
-                          </div>
-                       </div>
-                       <div className="single-team text-center">
-                          <div className="team-image">
-                             <img src="img/testimonial/1.png" alt=""/>
-                          </div>
-                          <div className="team-details">
-                             <h3>Salim Rana</h3>
-                             <div className="team-social fix">
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look. </p>
-                             </div>
-                             <div className="reating-icon">
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star-half"></i>
-                             </div>
-                          </div>
-                       </div>
-                       <div className="single-team text-center">
-                          <div className="team-image">
-                             <img src="img/testimonial/1.png" alt=""/>
-                          </div>
-                          <div className="team-details">
-                             <h3>Salim Rana</h3>
-                             <div className="team-social fix">
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look. </p>
-                             </div>
-                             <div className="reating-icon">
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star"></i>
-                                <i className="zmdi zmdi-star-half"></i>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
+        <Element name="review-area">
+          <div id="review-area" className="ptb-120">
+             <div className="container">
+                <div className="row">
+                   <div className="col-md-12 text-center">
+                      <div className="title-style title-pb4">
+                         <h1>our <span> client loves</span></h1>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam </p>
+                      </div>
+                   </div>
+                   <div className="col-md-8 col-md-offset-2">
+                      <div className="slider-2">
+                         <div className="single-team text-center">
+                            <div className="team-image">
+                               <img src="img/testimonial/1.png" alt=""/>
+                            </div>
+                            <div className="team-details">
+                               <h3>Salim Rana</h3>
+                               <div className="team-social fix">
+                                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look. </p>
+                               </div>
+                               <div className="reating-icon">
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star-half"></i>
+                               </div>
+                            </div>
+                         </div>
+                         <div className="single-team text-center">
+                            <div className="team-image">
+                               <img src="img/testimonial/1.png" alt=""/>
+                            </div>
+                            <div className="team-details">
+                               <h3>Salim Rana</h3>
+                               <div className="team-social fix">
+                                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look. </p>
+                               </div>
+                               <div className="reating-icon">
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star-half"></i>
+                               </div>
+                            </div>
+                         </div>
+                         <div className="single-team text-center">
+                            <div className="team-image">
+                               <img src="img/testimonial/1.png" alt=""/>
+                            </div>
+                            <div className="team-details">
+                               <h3>Salim Rana</h3>
+                               <div className="team-social fix">
+                                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look. </p>
+                               </div>
+                               <div className="reating-icon">
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star"></i>
+                                  <i className="zmdi zmdi-star-half"></i>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+        </Element>
 
         <div id="pricing-area" className="pricing-area gray-bg ptb-120">
            <div className="container">

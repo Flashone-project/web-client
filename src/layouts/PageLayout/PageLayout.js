@@ -17,6 +17,9 @@ export class PageLayout extends Component {
   constructor (props){
       super(props);
       this.scrollToTop = this.scrollToTop.bind(this);
+      this.state = {
+        isStick: false
+      }
   }
   componentDidMount() {
 
@@ -30,6 +33,18 @@ export class PageLayout extends Component {
 
     scrollSpy.update();
 
+    window.addEventListener("scroll", this.listenScrollEvent.bind(this));
+
+  }
+
+  listenScrollEvent(e) {
+    if (window.scrollY < 1) {
+      this.setState({ isStick: false })
+    } else {
+      if (!this.state.isStick) {
+        this.setState({ isStick: true })
+      }
+    }
   }
   scrollToTop() {
     scroll.scrollToTop();
@@ -69,12 +84,17 @@ export class PageLayout extends Component {
   componentWillUnmount() {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
+    window.removeEventListener("scroll", this.listenScrollEvent.bind(this));
   }
   render() {
+    var stick = "sticker "
+    if (this.state.isStick) {
+      stick += "stick"
+    }
     return (
       <div className="wrapper">
           <header className="header-area">
-            <div id="main-menu" className="sticker">
+            <div id="main-menu" className={stick}>
               <div className="container">
                <div className="row">
                  <div className="col-md-12 col-xs-12">
@@ -89,18 +109,22 @@ export class PageLayout extends Component {
                          <nav>
                              <ul className="menu one-page">
                                  <li>
-                                   <LinkScroll activeClass="active" to="home-area" spy={true} smooth={true} duration={500}>HOME</LinkScroll>
+                                   <LinkScroll activeClass="active" to="home-area" spy={true} offset={-60} smooth={true} duration={500}>HOME</LinkScroll>
                                  </li>
                                  <li>
-                                   <LinkScroll activeClass="active" to="about-area" spy={true} smooth={true} duration={500}>About</LinkScroll>
+                                   <LinkScroll activeClass="active" to="about-area" spy={true} offset={-60} smooth={true} duration={500}>About</LinkScroll>
                                  </li>
                                  <li>
-                                   <LinkScroll activeClass="active" to="features-area" spy={true} smooth={true} duration={500}>Flash Token</LinkScroll>
+                                   <LinkScroll activeClass="active" to="features-area" spy={true} offset={-60} smooth={true} duration={500}>Flash Token</LinkScroll>
                                  </li>
-                                 <li><a href="#screenshort-area">Distribution of Tokens</a></li>
-                                 <li><a href="#review-area">ICO Structure</a></li>
                                  <li>
-                                   <LinkScroll activeClass="active" to="roadmap-area" spy={true} smooth={true} duration={500}>Road Map</LinkScroll>
+                                  <LinkScroll activeClass="active" to="screenshort-area" spy={true} offset={-60} smooth={true} duration={500}>Distribution of Tokens</LinkScroll>
+                                </li>
+                                 <li>
+                                  <LinkScroll activeClass="active" to="review-area" spy={true} offset={-60} smooth={true} duration={500}>ICO Structure</LinkScroll>
+                                 </li>
+                                 <li>
+                                   <LinkScroll activeClass="active" to="roadmap-area" spy={true} offset={-60} smooth={true} duration={500}>Road Map</LinkScroll>
                                  </li>
                                  <li><a href="#support-area">support</a></li>
                              </ul>
